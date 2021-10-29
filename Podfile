@@ -3,15 +3,9 @@ platform :ios, '13.0'
 use_frameworks!
 
 workspace 'DummyApp'
-project 'DummyApp.xcodeproj', {
-    "Staging Debug" => :debug,
-    "Production Debug" => :debug,
-    "Staging AdHoc" => :release,
-    "Staging AppStore" => :release,
-    "Production AppStore" => :release
-  }
 
 def core_pods
+  pod 'DummyLib', :path => 'DummyLib/'
   pod 'Kingfisher'
 end
 
@@ -20,13 +14,12 @@ def test_pods
 end
 
 target 'DummyApp' do
-  project 'DummyApp.xcodeproj'
-
-  core_pods
-end
-
-target 'DummyLib' do
-  project 'DummyLib/DummyLib.xcodeproj'
+  project 'DummyApp.xcodeproj', {
+    "Debug stg" => :debug,
+    "Debug prod" => :debug,
+    "AppStore" => :release,
+    "AdHoc" => :release
+  }
 
   core_pods
 end

@@ -5,9 +5,6 @@
       location = "group:DummyApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DummyLib/DummyLib.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:DummyLibSample/DummyLibSample.xcodeproj">
    </FileRef>
    <FileRef

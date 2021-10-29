@@ -16,8 +16,6 @@
 		001FC2AC272C519600D15079 /* DummyLibSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FC2AB272C519600D15079 /* DummyLibSampleTests.swift */; };
 		001FC2B6272C519600D15079 /* DummyLibSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FC2B5272C519600D15079 /* DummyLibSampleUITests.swift */; };
 		001FC2B8272C519600D15079 /* DummyLibSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FC2B7272C519600D15079 /* DummyLibSampleUITestsLaunchTests.swift */; };
-		001FC2D1272C5ABB00D15079 /* DummyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001FC2D0272C5ABB00D15079 /* DummyLib.framework */; };
-		001FC2D2272C5ABB00D15079 /* DummyLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 001FC2D0272C5ABB00D15079 /* DummyLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9AA926EB3DF45BF3E043FC64 /* Pods_DummyLibSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FE5F7B194890351D61A87B /* Pods_DummyLibSampleTests.framework */; };
 		F93B2371C7E1347979F49BF9 /* Pods_DummyLibSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27811A345763D9E7E275187C /* Pods_DummyLibSample.framework */; };
 /* End PBXBuildFile section */
@@ -38,20 +36,6 @@
 			remoteInfo = DummyLibSample;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		001FC2D3272C5ABB00D15079 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				001FC2D2272C5ABB00D15079 /* DummyLib.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		001FC291272C519400D15079 /* DummyLibSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyLibSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F93B2371C7E1347979F49BF9 /* Pods_DummyLibSample.framework in Frameworks */,
-				001FC2D1272C5ABB00D15079 /* DummyLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +182,6 @@
 				001FC28E272C519400D15079 /* Frameworks */,
 				001FC28F272C519400D15079 /* Resources */,
 				BA68E2E02415A1864717F84E /* [CP] Embed Pods Frameworks */,
-				001FC2D3272C5ABB00D15079 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
