@@ -1,0 +1,28 @@
+platform :ios, '13.0'
+
+use_frameworks!
+
+workspace 'DummyApp'
+project 'DummyApp'
+
+def core_pods
+  pod 'Kingfisher'
+end
+
+target 'DummyApp' do
+  project 'DummyApp.xcodeproj'
+
+  core_pods
+end
+
+target 'DummyLib' do
+  project 'DummyLib/DummyLib.xcodeproj'
+
+  core_pods
+end
+
+target 'DummyLibSample' do
+  project 'DummyLibSample/DummyLibSample.xcodeproj'
+
+  core_pods
+end

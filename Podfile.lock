@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (7.1.0)
+  - Nimble (9.2.1)
+
+DEPENDENCIES:
+  - Kingfisher
+  - Nimble
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - Nimble
+
+SPEC CHECKSUMS:
+  Kingfisher: cdabaf49be7ee7cc124f0f276b355edf61903cf8
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+
+PODFILE CHECKSUM: 7e636f12a18253496de253579177c7a2154bd907
+
+COCOAPODS: 1.11.2
